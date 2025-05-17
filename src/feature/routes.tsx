@@ -25,11 +25,6 @@ const RoutesComponent: CustomRouteObject[] = [
   },
 
 
-  { 
-    name: 'Migrations',
-    path: '/Migrations',
-    element: <MigrationsPage />
-  },
 
   { 
     name: 'Migrations',
@@ -37,10 +32,17 @@ const RoutesComponent: CustomRouteObject[] = [
     element: <MigrationsPage />
   },
 
+ 
 
   { 
     name: 'Turims Usa',
     path: '/Migrations/TurimsUsa',
+    element: <TurimsUsa />
+  },
+
+   { 
+    name: 'Page Not Found',
+    path: '*',
     element: <TurimsUsa />
   },
   // Aquí podrías agregar más rutas más adelante
