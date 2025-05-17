@@ -6,7 +6,7 @@ export const Footer = () => {
 
   return (
     <footer>
-        <div className="bg-gray-800  text-white py-4 h-40 italic ">
+        <div className="bg-gray-800  text-white py-4 md:h-40 italic ">
             <div className=" container grid grid-cols-1 md:grid-cols-3 mx-auto text-center mt-5">
                 <div className="col-span-1">
                     <h2 className="text-lg font-bold mb-2">Contáctanos</h2>

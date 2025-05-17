@@ -11,6 +11,9 @@ export const HomePage = () => {
 
 
   
+
+
+  
       const settings = {
           dots: true,  // Muestra los puntos de navegación
           infinite: true,  // Permite el desplazamiento infinito

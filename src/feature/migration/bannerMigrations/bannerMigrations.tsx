@@ -45,9 +45,9 @@ export const BannerMigrations:React.FC<BannerMigrationsProps> = ({ img, navigati
     transition={{ duration: 1.2, ease: 'easeOut' }}
     className={` relative z-10 flex flex-col justify-center h-full  text-white px-6 py-16 space-y-6   ${isText}`}
   >
-   <picture>
+   <picture >
   <motion.div
-    className="relative mt-5 md:mt-0 w-56 h-56 md:mx-14 rounded-full border-4 border-gradient-to-r from-yellow-400 to-yellow-600 shadow-lg overflow-hidden"
+    className="relative  md:mt-0 w-32 h-32 md:w-56  md:h-56 md:mx-14 rounded-full border-4 border-gradient-to-r from-yellow-400 to-yellow-600 shadow-lg overflow-hidden"
     animate={{
       y: [0, -10, 0], // Movimiento hacia arriba y abajo
     }}
@@ -60,11 +60,11 @@ export const BannerMigrations:React.FC<BannerMigrationsProps> = ({ img, navigati
     <img
       src={logo}
       alt="Logo migrations"
-      className="w-full h-full object-cover"
+      className="w-full h-full object-cover "
     />
   </motion.div>
 </picture>
-    <h1 className="text-3xl md:text-5xl font-bold drop-shadow-lg">{title}</h1>
+    <h1 className=" text-2xl md:text-5xl font-bold drop-shadow-lg">{title}</h1>
     <p className={`text-xl max-w-lg drop-shadow ${subText}`}>{subtitle}</p>
     <Button type='button' onClick={()=> handleNavigation()} className={`bg-gradient-to-r h-12 text-lg ${isProtours ? 'bg-yellow-500' : 'bg-blue-800'}   hover:bg-gradient-to-l  transition duration-300 ease-in-out px-6 py-3 rounded-lg shadow-lg`}>
       {ctaText}
