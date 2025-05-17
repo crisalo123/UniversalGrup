@@ -72,9 +72,9 @@ export const Testimonials = () => {
 
   return (
     <div>
-        <Slider {...settings }  className='  mr-10'  >
+        <Slider {...settings }  className=' mr-0  md:mr-10'  >
     { mockDataTestimonials.length > 0 ?  mockDataTestimonials.map((item) => (
-       <Card  key={item.id}  className="md:!w-11/12 mx-5 justify-center    !rounded-t-2xl h-44">
+       <Card  key={item.id}  className=" md:!w-11/12 md:mx-5 justify-center    !rounded-t-2xl h-44">
          <div className="flex justify-center pt-4">
              {/* <img src={item.img} alt={item.title} className="w-72 h-48 object-cover rounded-md" /> */}
              <span>{item.image}</span>

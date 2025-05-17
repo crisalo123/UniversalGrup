@@ -1,4 +1,4 @@
-import { Footer, Navbar } from '@/feature/core/ui'
+import { Footer, Link, Navbar } from '@/feature/core/ui'
 import { FaPassport, FaPlaneDeparture, FaRegSmileBeam } from "react-icons/fa"
 import  imgbgTurimsUsa from '@/feature/migration/img/turismoUsa.jpg'
 
@@ -17,14 +17,14 @@ export const TurimsUsa = () => {
             <p className="text-xl mb-6">
               Descubre, explora y vive experiencias inolvidables en USA. Nosotros te ayudamos a lograrlo.
             </p>
-            <a
-              href="https://wa.me/3202853852"
+            <Link
+              to="https://wa.me/3202853852"
               target="_blank"
               rel="noopener noreferrer"
-              className="bg-yellow-400 hover:bg-yellow-500 text-blue-900 px-8 py-3 rounded-full font-semibold text-lg shadow-lg transition"
+              className="bg-yellow-400 text-sm hover:bg-yellow-500 text-blue-900 px-8 py-3 rounded-full font-semibold md:text-lg shadow-lg transition"
             >
               Solicita tu asesoría ahora
-            </a>
+            </Link>
           </div>
         </section>
 
