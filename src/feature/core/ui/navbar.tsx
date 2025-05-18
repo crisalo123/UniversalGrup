@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react'
 import { Link } from './Link'
 import { useLocation } from 'react-router-dom'
+import { WhatsAppComponent } from './whatsAppComponent'
 
 const linkNavar = [
   { name: 'VISA ESTUDIO USA', to: '/Migrations' },
@@ -23,6 +24,8 @@ export const Navbar: React.FC = () => {
     return () => window.removeEventListener('scroll', handleScroll)
   }, [])
 
+ 
+
   // Cierra el menú móvil al navegar
   useEffect(() => {
     setMenuOpen(false)
@@ -39,9 +42,9 @@ export const Navbar: React.FC = () => {
         {/* Logo */}
         <div className="text-2xl font-semibold text-white font-display md:tracking-wide flex items-center gap-2">
           <Link className='!no-underline' to={'/'}>
-            <span className='text-white mx-2'>★</span>
+            {/* <span className={`text-white  mx-2 `}>★</span> */}
             <span className={isScrolled ? 'text-gray-800' : 'text-white'}>
-              {isLocations ? 'Home' : 'Universal Group'}
+              {isLocations ? 'HOME' : 'UNIVERSAL GRUP'}
             </span>
           </Link>
         </div>
@@ -93,11 +96,17 @@ export const Navbar: React.FC = () => {
         )}
 
         {/* Mobile Menu Button */}
+        <WhatsAppComponent
+          classNameLogo='text-xl'
+          className='md:hidden fixed  right-16 bg-green-500 text-white p-4 rounded-full shadow-lg hover:bg-green-600 ' />
+
         <button
           className="md:hidden text-white focus:outline-none z-50"
           onClick={() => setMenuOpen(!menuOpen)}
           aria-label="Abrir menú"
         >
+   
+
           <svg
             className="w-7 h-7"
             fill="none"

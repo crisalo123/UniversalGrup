@@ -35,8 +35,8 @@ const [isResponsive, setIsResponsive] = useState(window.innerWidth < 768);
           slidesToScroll: 1,  // Número de slides que se desplazan
           autoplay: true,  // Activa el auto-slide
           autoplaySpeed: 3000,  // Tiempo entre cada slide
-          prevArrow: !isResponsive ? <CustomNextArrow /> : undefined,
-          nextArrow: !isResponsive ? <CustomPrevArrow /> : undefined,
+          prevArrow: !isResponsive ? <CustomNextArrow  className='text-gray-500'/> : undefined,
+          nextArrow: !isResponsive ? <CustomPrevArrow className='text-gray-500' /> : undefined,
           responsive: [
             {
               breakpoint: 1024,
@@ -61,16 +61,16 @@ const [isResponsive, setIsResponsive] = useState(window.innerWidth < 768);
   return (
     <>
       <Navbar />
-      <main className="pt-20  md:pr-10 md:pl-10  overflow-x-hidden">
+      <main className="mt-20  md:pr-10 md:pl-10  overflow-x-hidden overflow-y-hidden">
         {/* Sección de Migración */}
          <Slider {...settings }  >
           {mookDataHome.map((item) => (
             <section
             key={item.id}
-          className="md:bg-gray-100  md:shadow-md mb-10"
+          className="md:bg-gray-100   md:shadow-md mb-10"
           style={{ backgroundImage: `url(${item.imgBackground})`, backgroundSize: 'cover', backgroundPosition: 'center' }}
         >
-          <div className="bg-white bg-opacity-80 p-5 rounded-lg">
+          <div className="bg-white bg-opacity-80  rounded-lg">
             <BannerMigrations
               logo={item.logo}
               title={item.title}

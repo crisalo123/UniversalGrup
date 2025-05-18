@@ -6,6 +6,7 @@ import { FaAngleDoubleLeft } from "react-icons/fa";
 
 import { mockDataTestimonials } from '../const/mockData';
 import { Card } from '@/feature/core/ui';
+import { useEffect, useState } from 'react';
 
 
 export interface CustomArrowProps {
@@ -38,6 +39,20 @@ export const CustomPrevArrow = (props: CustomArrowProps) => {
 
 export const Testimonials = () => {
 
+const [isResponsive, setIsResponsive] = useState(window.innerWidth < 768);
+
+
+ useEffect(() => {
+    const handleResize = () => {
+      setIsResponsive(window.innerWidth < 768);
+    };
+
+    window.addEventListener('resize', handleResize);
+
+    return () => window.removeEventListener('resize', handleResize);
+  }, []);
+
+
     const settings = {
         dots: true,  // Muestra los puntos de navegación
         infinite: true,  // Permite el desplazamiento infinito
@@ -46,8 +61,8 @@ export const Testimonials = () => {
         slidesToScroll: 1,  // Número de slides que se desplazan
         autoplay: true,  // Activa el auto-slide
         autoplaySpeed: 3000,  // Tiempo entre cada slide
-        prevArrow: <CustomNextArrow  />,
-        nextArrow: <CustomPrevArrow  />,
+        prevArrow: !isResponsive ? <CustomNextArrow  className='text-gray-500'/> : undefined,
+          nextArrow: !isResponsive ? <CustomPrevArrow className='text-gray-500' /> : undefined,
         responsive: [
           {
             breakpoint: 1024,
@@ -71,7 +86,7 @@ export const Testimonials = () => {
       };
 
   return (
-    <div>
+    <div className='overflow-x-hidden overflow-y-hidden'>
         <Slider {...settings }  className=' mr-0  md:mr-10'  >
     { mockDataTestimonials.length > 0 ?  mockDataTestimonials.map((item) => (
        <Card  key={item.id}  className=" md:!w-11/12 md:mx-5 justify-center    !rounded-t-2xl h-44">

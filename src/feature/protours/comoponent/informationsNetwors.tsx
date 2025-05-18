@@ -12,7 +12,7 @@ export const InformationsNetwors = () => {
         <h2 className="text-3xl font-bold text-center mb-10 ">Síguenos en Redes Sociales</h2>
         <div className="flex justify-center space-x-6">
           {[
-            { name: 'Facebook', icon: <FaFacebook />, link: 'https://facebook.com' },
+            { name: 'Facebook', icon: <FaFacebook />, link: 'https://web.facebook.com/UniversalprotoursOficial?mibextid=wwXIfr&_rdc=1&_rdr#' },
             { name: 'Instagram', icon: <FaInstagram />, link: 'https://www.instagram.com/universalprotours/?igsh=NTRkbmxxZmZ5Ym5t&utm_source=qr#' },
           ].map((social, index) => (
             <Link

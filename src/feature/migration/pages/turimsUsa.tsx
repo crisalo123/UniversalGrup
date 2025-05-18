@@ -10,7 +10,7 @@ export const TurimsUsa = () => {
         {/* Hero */}
         <section className="relative bg-cover bg-center text-white min-h-[60vh] flex items-center justify-center px-6"
           style={{ backgroundImage: `url(${imgbgTurimsUsa})` }}>
-          <div className="bg-black bg-opacity-60 p-10 rounded-lg max-w-2xl text-center">
+          <div className="bg-black mt-5 md:mt-0 bg-opacity-60 p-10 rounded-lg max-w-2xl text-center">
              <h1 className="text-4xl md:text-5xl font-bold mb-4 leading-tight font-pacifico text-yellow-400 drop-shadow-lg">
              ¡Viaja a Estados Unidos con tu Visa de Turismo!
             </h1>

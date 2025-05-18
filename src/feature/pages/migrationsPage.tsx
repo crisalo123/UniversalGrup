@@ -30,7 +30,7 @@ export const MigrationsPage = () => {
         className="relative bg-cover bg-center text-white min-h-[80vh] flex items-center justify-center px-6"
         style={{ backgroundImage: `url(${studentImg})` }}
       >
-        <div className="bg-black bg-opacity-60 p-10 rounded-lg max-w-3xl text-center">
+        <div className="bg-black mt-5 md:mt-0 bg-opacity-60 p-10 rounded-lg max-w-3xl text-center">
           <h1 className="text-4xl md:text-5xl font-bold mb-4 leading-tight ">
             ¿Por Qué Estudiar Inglés en EE.UU. con Nosotros?
           </h1>
