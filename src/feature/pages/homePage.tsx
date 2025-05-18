@@ -6,10 +6,23 @@ import "slick-carousel/slick/slick-theme.css";
 import { Footer } from '../core/ui'
 import { CustomNextArrow, CustomPrevArrow } from '../protours/comoponent'
 import { mookDataHome } from '../protours/const/mockDataHome';
+import { useEffect, useState } from 'react';
 
 export const HomePage = () => {
+    
+const [isResponsive, setIsResponsive] = useState(window.innerWidth < 768);
 
 
+ useEffect(() => {
+    const handleResize = () => {
+      setIsResponsive(window.innerWidth < 768);
+    };
+
+    window.addEventListener('resize', handleResize);
+
+    return () => window.removeEventListener('resize', handleResize);
+  }, []);
+  
   
 
 
@@ -22,8 +35,8 @@ export const HomePage = () => {
           slidesToScroll: 1,  // Número de slides que se desplazan
           autoplay: true,  // Activa el auto-slide
           autoplaySpeed: 3000,  // Tiempo entre cada slide
-          prevArrow: <CustomNextArrow  />,
-          nextArrow: <CustomPrevArrow  />,
+          prevArrow: !isResponsive ? <CustomNextArrow /> : undefined,
+          nextArrow: !isResponsive ? <CustomPrevArrow /> : undefined,
           responsive: [
             {
               breakpoint: 1024,
@@ -48,13 +61,13 @@ export const HomePage = () => {
   return (
     <>
       <Navbar />
-      <main className="pt-20 pr-10 pl-10">
+      <main className="pt-20  md:pr-10 md:pl-10  overflow-x-hidden">
         {/* Sección de Migración */}
-         <Slider {...settings }  className=' '  >
+         <Slider {...settings }  >
           {mookDataHome.map((item) => (
             <section
             key={item.id}
-          className="bg-gray-100  shadow-md mb-10"
+          className="md:bg-gray-100  md:shadow-md mb-10"
           style={{ backgroundImage: `url(${item.imgBackground})`, backgroundSize: 'cover', backgroundPosition: 'center' }}
         >
           <div className="bg-white bg-opacity-80 p-5 rounded-lg">
