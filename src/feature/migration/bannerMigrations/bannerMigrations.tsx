@@ -32,7 +32,7 @@ export const BannerMigrations:React.FC<BannerMigrationsProps> = ({ img, navigati
   return (
     <section
   id="migrations"
-  className="relative w-full h-screen bg-cover bg-center"
+  className="relative h-[480px] md:w-full md:h-screen bg-cover bg-center"
   style={{ backgroundImage: `url(${img})` }}
 >
   {/* Overlay negro semitransparente */}
