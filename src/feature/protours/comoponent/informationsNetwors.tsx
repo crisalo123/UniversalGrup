@@ -1,12 +1,30 @@
 import { Link } from "@/feature/core/ui";
 import { FaFacebook, FaInstagram } from "react-icons/fa";
 import women from '@/feature/protours/img/chica.png'
+import { useEffect, useState } from "react";
 
 export const InformationsNetwors = () => {
+
+  const [isResponsive, setIsResponsive] = useState(window.innerWidth < 768);
+  
+  
+   useEffect(() => {
+      const handleResize = () => {
+        setIsResponsive(window.innerWidth < 768);
+      };
+  
+      window.addEventListener('resize', handleResize);
+  
+      return () => window.removeEventListener('resize', handleResize);
+    }, []);
+
+    const img = isResponsive ? 'block' : women;
+
+
   return (
      <section
       className=" bg-black/40  py-20 px-6 bg-no-repeat bg-right   w-full bg-opacity-50 text-white"
-     style={{ backgroundImage: `url(${women})` }}
+     style={{ backgroundImage: `url(${img})` }}
      
     >
         <h2 className="text-3xl font-bold text-center mb-10 ">Síguenos en Redes Sociales Proturs</h2>
