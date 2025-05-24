@@ -6,6 +6,7 @@ import { lazyImport } from './core/utils/lazyImport';
 
 // Ejemplo de lazy import
 const { HomePage } = lazyImport(() => import('./pages/homePage'), 'HomePage');
+const { Contruccion } = lazyImport(() => import('./pages/contruccion'), 'Contruccion');
 const { ProtursPage } = lazyImport(() => import('./pages/protursPage'), 'ProtursPage');
 const { MigrationsPage } = lazyImport(() => import('./pages/migrationsPage'), 'MigrationsPage');
 const {  MainLayout} = lazyImport(() => import('./core/ui/mainLayout'), 'MainLayout');
@@ -47,8 +48,8 @@ const RoutesComponent: CustomRouteObject[] = [
       },
       {
         name: 'Page Not Found',
-        path: '*',
-        element: <TurimsUsa />
+        path: '/*',
+        element: <Contruccion />
       }
     ]
   }
