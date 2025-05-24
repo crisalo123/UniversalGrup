@@ -61,13 +61,13 @@ const [isResponsive, setIsResponsive] = useState(window.innerWidth < 768);
   return (
    
    
-      <main className="mt-20  md:pr-10 md:pl-10  overflow-x-hidden overflow-y-hidden">
+      <main className="mt-14 md:mt-20  md:pr-10 md:pl-10  overflow-x-hidden overflow-y-hidden">
         {/* Sección de Migración */}
          <Slider {...settings }  >
           {mookDataHome.map((item) => (
             <section
             key={item.id}
-          className="md:bg-gray-100   md:shadow-md mb-10"
+          className="md:bg-gray-100   md:shadow-md md:mb-10"
           style={{ backgroundImage: `url(${item.imgBackground})`, backgroundSize: 'cover', backgroundPosition: 'center' }}
         >
           <div className="bg-white bg-opacity-80  rounded-lg">

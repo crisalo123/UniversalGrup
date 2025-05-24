@@ -7,7 +7,7 @@ export const MainLayout = () => {
   return (
     <>
       <Navbar />
-      <main style={{ minHeight: '80vh' }}>
+      <main >
         <Outlet /> {/* Aquí se renderizan las páginas hijas */}
       </main>
       <Footer />
