@@ -1,4 +1,3 @@
-import { Footer, Navbar } from "../core/ui"
 import studentImg from "@/feature/migration/img/estuden.jpg";
 import { FaPassport, FaUniversity, FaGlobeAmericas, FaQuoteLeft } from "react-icons/fa";
 
@@ -23,8 +22,8 @@ const testimonios = [
 export const MigrationsPage = () => {
   return (
     <>
-      <Navbar />
-      <main className="min-h-screen bg-gradient-to-br from-blue-50 to-blue-100 pt-28 pb-16">
+     
+      <main className="min-h-screen bg-gradient-to-br from-blue-50 to-blue-100 pt-10 pb-16">
         {/* Hero */}
           <section
         className="relative bg-cover bg-center text-white min-h-[80vh] flex items-center justify-center px-6"
@@ -99,12 +98,12 @@ export const MigrationsPage = () => {
               </div>
             ))}
           </div>
-          <p className="text-center text-lg text-blue-700 mt-10 font-semibold">
+          <p className="text-center text-lg text-blue-700 mt-10 font-semibold font-pacifico">
             Tú También Puedes Ser Nuestro Próximo Caso de Éxito
           </p>
         </section>
       </main>
-      <Footer />
+     
     </>
   )
 }

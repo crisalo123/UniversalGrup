@@ -8,44 +8,52 @@ import { lazyImport } from './core/utils/lazyImport';
 const { HomePage } = lazyImport(() => import('./pages/homePage'), 'HomePage');
 const { ProtursPage } = lazyImport(() => import('./pages/protursPage'), 'ProtursPage');
 const { MigrationsPage } = lazyImport(() => import('./pages/migrationsPage'), 'MigrationsPage');
+const {  MainLayout} = lazyImport(() => import('./core/ui/mainLayout'), 'MainLayout');
 
 const { TurimsUsa } = lazyImport(() => import('./migration/pages/turimsUsa'), 'TurimsUsa');
+const { TurimsCanada } = lazyImport(() => import('./migration/pages/turimsCanada'), 'TurimsCanada');
 
 const RoutesComponent: CustomRouteObject[] = [
-  { 
-    name: 'Home',
+  {
+    name: 'Main',
     path: '/',
-    element: <HomePage />
-  },
-
-  { 
-    name: 'Proturs',
-    path: '/Proturs',
-    element: <ProtursPage />
-  },
-
-
-
-  { 
-    name: 'Migrations',
-    path: '/Migrations',
-    element: <MigrationsPage />
-  },
-
- 
-
-  { 
-    name: 'Turims Usa',
-    path: '/Migrations/TurimsUsa',
-    element: <TurimsUsa />
-  },
-
-   { 
-    name: 'Page Not Found',
-    path: '*',
-    element: <TurimsUsa />
-  },
-  // Aquí podrías agregar más rutas más adelante
+    element: <MainLayout />,
+    children: [
+     
+      {
+        name: 'Home',
+        index: true, 
+        element: <HomePage />
+      },
+      {
+        name: 'Proturs',
+        path: 'Proturs',
+        element: <ProtursPage />
+      },
+      {
+        name: 'Migrations',
+        path: 'Migrations',
+        element: <MigrationsPage />
+      },
+      {
+        name: 'Turims Usa',
+        path: 'Migrations/TurimsUsa',
+        element: <TurimsUsa />
+      },
+      {
+        name: 'Turims Canada',
+        path: 'Migrations/TurimsCanada',
+        element: <TurimsCanada />
+      },
+      {
+        name: 'Page Not Found',
+        path: '*',
+        element: <TurimsUsa />
+      }
+    ]
+  }
+  // Puedes agregar más layouts si lo necesitas
 ];
 
 export default RoutesComponent;
+

@@ -4,9 +4,9 @@ import { useLocation } from 'react-router-dom'
 import { WhatsAppComponent } from './whatsAppComponent'
 
 const linkNavar = [
-  { name: 'VISA ESTUDIO USA', to: '/Migrations' },
-  { name: 'VISA TURISMO USA', to: '/Migrations/TurimsUsa' },
-  { name: 'VISA TURISMO CANADA', to: '/visa' },
+  { name: 'VISA ESTUDIO USA', to: 'Migrations' },
+  { name: 'VISA TURISMO USA', to: 'Migrations/TurimsUsa' },
+  { name: 'VISA TURISMO CANADA', to: 'Migrations/TurimsCanada' },
   { name: 'VISA TURISMO REINO UNIDO', to: '/visa' },
   { name: 'VISA TURISMO CHINA', to: '/visa' },
   { name: 'PERDON MIGRATORIO', to: '/visa' }
@@ -44,7 +44,7 @@ export const Navbar: React.FC = () => {
           <Link className='!no-underline' to={'/'}>
             {/* <span className={`text-white  mx-2 `}>★</span> */}
             <span className={isScrolled ? 'text-gray-800' : 'text-white'}>
-              {isLocations ? 'HOME' : 'UNIVERSAL GRUP'}
+              {isLocations ? 'HOME' : 'UNIVERSAL GROUP'}
             </span>
           </Link>
         </div>
@@ -53,15 +53,15 @@ export const Navbar: React.FC = () => {
         {!isLocations && (
           <nav className="hidden md:flex gap-6 font-medium">
             <Link
-              to={"/Migrations"}
+              to={"Migrations"}
               className={`transition duration-300 !no-underline ${
-                isScrolled ? 'text-gray-800 hover:text-blue-500' : 'text-white hover:text-yellow-400'
+                isScrolled ? 'text-gray-800 hover:text-blue-500' : 'text-white hover:text-red-400'
               }`}
             >
               Migrations
             </Link>
             <Link
-              to={"/Proturs"}
+              to={"Proturs"}
               className={`transition duration-300  !no-underline ${
                 isScrolled ? 'text-gray-800 hover:text-blue-500' : 'text-white hover:text-yellow-400'
               }`}
@@ -86,7 +86,7 @@ export const Navbar: React.FC = () => {
                 key={link.name}
                 to={link.to}
                 className={`transition duration-300  !no-underline ${
-                  isScrolled ? 'text-gray-800  hover:text-blue-500' : 'text-white hover:text-yellow-400'
+                  isScrolled ? 'text-gray-800  hover:text-blue-500' : 'text-white hover:text-red-500'
                 }`}
               >
                 {link.name}

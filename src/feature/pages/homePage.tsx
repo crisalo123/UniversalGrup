@@ -1,9 +1,9 @@
-import { Navbar } from '../core/ui/navbar'
+
 import { BannerMigrations } from '../migration'
 import Slider from 'react-slick'; // Removed as it's unused
 import "slick-carousel/slick/slick.css"; 
 import "slick-carousel/slick/slick-theme.css";
-import { Footer } from '../core/ui'
+
 import { CustomNextArrow, CustomPrevArrow } from '../protours/comoponent'
 import { mookDataHome } from '../protours/const/mockDataHome';
 import { useEffect, useState } from 'react';
@@ -59,8 +59,8 @@ const [isResponsive, setIsResponsive] = useState(window.innerWidth < 768);
   
         };
   return (
-    <>
-      <Navbar />
+   
+   
       <main className="mt-20  md:pr-10 md:pl-10  overflow-x-hidden overflow-y-hidden">
         {/* Sección de Migración */}
          <Slider {...settings }  >
@@ -85,8 +85,7 @@ const [isResponsive, setIsResponsive] = useState(window.innerWidth < 768);
           ))}
         </Slider>
       </main>
-      <Footer />
-    </>
+    
   )
 }
 

@@ -1,32 +1,31 @@
-import { Footer, Link, Navbar } from '@/feature/core/ui'
+import {  Link } from '@/feature/core/ui'
 import { FaPassport, FaPlaneDeparture, FaRegSmileBeam } from "react-icons/fa"
 import  imgbgTurimsUsa from '@/feature/migration/img/turismoUsa.jpg'
 
 export const TurimsUsa = () => {
   return (
-    <>
-      <Navbar />
-      <main className="min-h-screen  pt-28 pb-16">
+    
+      <main className="min-h-screen  pt-10 pb-16">
         {/* Hero */}
-        <section className="relative bg-cover bg-center text-white min-h-[60vh] flex items-center justify-center px-6"
-          style={{ backgroundImage: `url(${imgbgTurimsUsa})` }}>
-          <div className="bg-black mt-5 md:mt-0 bg-opacity-60 p-10 rounded-lg max-w-2xl text-center">
-             <h1 className="text-4xl md:text-5xl font-bold mb-4 leading-tight font-pacifico text-yellow-400 drop-shadow-lg">
-             ¡Viaja a Estados Unidos con tu Visa de Turismo!
-            </h1>
-            <p className="text-xl mb-6">
-              Descubre, explora y vive experiencias inolvidables en USA. Nosotros te ayudamos a lograrlo.
-            </p>
-            <Link
-              to="https://wa.me/3202853852"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="bg-yellow-400 text-sm hover:bg-yellow-500 text-blue-900 px-8 py-3 rounded-full font-semibold md:text-lg shadow-lg transition"
-            >
-              Solicita tu asesoría ahora
-            </Link>
-          </div>
-        </section>
+      <section className="relative bg-cover bg-center text-white min-h-[60vh] flex items-center justify-center px-6"
+  style={{ backgroundImage: `url(${imgbgTurimsUsa})` }}>
+  <div className="bg-white/80 mt-5 md:mt-0 p-10 rounded-lg max-w-2xl text-center shadow-xl">
+    <h1 className="text-4xl md:text-5xl font-bold mb-4 leading-tight font-pacifico text-red-600 drop-shadow-lg">
+      ¡Viaja a Estados Unidos con tu Visa de Turismo!
+    </h1>
+    <p className="text-xl mb-6 text-black font-normal">
+      Descubre, explora y vive experiencias inolvidables en USA. Nosotros te ayudamos a lograrlo.
+    </p>
+    <Link
+      to="https://wa.me/3202853852"
+      target="_blank"
+      rel="noopener noreferrer"
+      className="bg-red-600 text-sm hover:bg-red-500 text-white hover:no-underline px-8 py-3 rounded-full font-semibold md:text-lg shadow-lg transition"
+    >
+      Solicita tu asesoría ahora
+    </Link>
+  </div>
+</section>
 
          <section className="max-w-3xl mt-10 mx-auto mb-16 px-6 py-10 rounded-3xl bg-blue-50/80 shadow-lg">
           <h2 className="text-lg md:text-2xl font-bold text-blue-800 mb-4 text-center italic">
@@ -63,17 +62,17 @@ export const TurimsUsa = () => {
           </h2>
           <div className="grid md:grid-cols-3 gap-8 text-center">
             <div className="flex flex-col items-center">
-              <FaPassport className="text-yellow-500 text-5xl mb-4" />
+              <FaPassport className="text-red-500 text-5xl mb-4" />
               <h3 className="font-bold text-lg mb-2">Acompañamiento Experto</h3>
               <p className="text-gray-700">Te guiamos en cada paso, desde la documentación hasta la entrevista.</p>
             </div>
             <div className="flex flex-col items-center">
-              <FaPlaneDeparture className="text-yellow-500 text-5xl mb-4" />
+              <FaPlaneDeparture className="text-red-500 text-5xl mb-4" />
               <h3 className="font-bold text-lg mb-2">Proceso Ágil y Seguro</h3>
               <p className="text-gray-700">Optimiza tu tiempo y aumenta tus posibilidades de aprobación.</p>
             </div>
             <div className="flex flex-col items-center">
-              <FaRegSmileBeam className="text-yellow-500 text-5xl mb-4" />
+              <FaRegSmileBeam className="text-red-500 text-5xl mb-4" />
               <h3 className="font-bold text-lg mb-2">Viaja Sin Preocupaciones</h3>
               <p className="text-gray-700">Disfruta tu viaje a USA con la tranquilidad de tener todo en regla.</p>
             </div>
@@ -87,25 +86,25 @@ export const TurimsUsa = () => {
           </h2>
           <ol className="space-y-6">
             <li className="flex items-start gap-4">
-              <span className="bg-yellow-400 text-blue-900 font-bold rounded-full w-8 h-8 flex items-center justify-center">1</span>
+              <span className="bg-red-400 text-white font-bold rounded-full w-8 h-8 flex items-center justify-center">1</span>
               <div>
                 <span className="font-semibold">Evaluación personalizada:</span> Analizamos tu perfil y te orientamos sobre los requisitos.
               </div>
             </li>
             <li className="flex items-start gap-4">
-              <span className="bg-yellow-400 text-blue-900 font-bold rounded-full w-8 h-8 flex items-center justify-center">2</span>
+              <span className="bg-red-400 text-white font-bold rounded-full w-8 h-8 flex items-center justify-center">2</span>
               <div>
                 <span className="font-semibold">Preparación de documentos:</span> Te ayudamos a reunir y organizar toda la documentación necesaria.
               </div>
             </li>
             <li className="flex items-start gap-4">
-              <span className="bg-yellow-400 text-blue-900 font-bold rounded-full w-8 h-8 flex items-center justify-center">3</span>
+              <span className="bg-red-400 text-white font-bold rounded-full w-8 h-8 flex items-center justify-center">3</span>
               <div>
                 <span className="font-semibold">Simulación de entrevista:</span> Practica con nosotros para que llegues seguro a tu cita en la embajada.
               </div>
             </li>
             <li className="flex items-start gap-4">
-              <span className="bg-yellow-400 text-blue-900 font-bold rounded-full w-8 h-8 flex items-center justify-center">4</span>
+              <span className="bg-red-400 text-white font-bold rounded-full w-8 h-8 flex items-center justify-center">4</span>
               <div>
                 <span className="font-semibold">¡Listo para viajar!</span> Recibe tu visa y prepárate para disfrutar USA.
               </div>
@@ -113,8 +112,7 @@ export const TurimsUsa = () => {
           </ol>
         </section>
       </main>
-      <Footer />
-    </>
+    
   )
 }
 

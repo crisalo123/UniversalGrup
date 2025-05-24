@@ -3,7 +3,7 @@
 import playaImg from '@/feature/protours/img/playa.jpg';
 import { DetailServices, Testimonials , InformationsNetwors } from "../protours/comoponent";
 import { useEffect } from "react";
-import { Navbar, WhatsAppComponent } from "../core/ui";
+import { WhatsAppComponent } from "../core/ui";
 
 
 export const ProtursPage = () => {
@@ -24,8 +24,8 @@ export const ProtursPage = () => {
 
 
   return (
-    <>
-      <Navbar />
+   
+     
     <main className="bg-gray-50 bg-fixed min-h-screen" style={{ backgroundImage: `url(${playaImg})` }}>
       {/* Carrusel de Imágenes */}
       <section className="relative w-full h-screen flex items-center justify-center bg-cover bg-center">
@@ -47,14 +47,16 @@ export const ProtursPage = () => {
        <Testimonials />
       </section>
       {/* Información de Redes */}
+      <div>
       <InformationsNetwors />
+       </div>
 
       <WhatsAppComponent 
       classNameLogo='text-2xl'
       className='fixed bottom-6 right-6 bg-green-500 text-white p-4 rounded-full shadow-lg hover:bg-green-600 transition animate-bounce' /> 
       
     </main>
-    </>
+   
   );
 };
 

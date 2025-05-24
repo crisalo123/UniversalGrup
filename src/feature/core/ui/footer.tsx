@@ -1,6 +1,6 @@
 import { CiLocationOn } from "react-icons/ci";
 import { Link } from "./Link";
-import {  FaInstagram } from "react-icons/fa";
+import {  FaInstagram, FaFacebook  } from "react-icons/fa";
 
 export const Footer = () => {
 
@@ -30,6 +30,12 @@ export const Footer = () => {
                    
                    <FaInstagram className="text-white mt-[1.1px] h-5 w-5 hover:text-primary-300" />
                    <span className="text-white mx-2 hover:text-primary-200">Instagram </span>
+                   </Link>
+
+                    <Link className="text-white flex hover:text-primary-300  !no-underline" target="_targetBlak" to={'https://web.facebook.com/profile.php?id=61576308320261&mibextid=wwXIfr&rdid=nXB5AvHFqkNDx55A&share_url=https%3A%2F%2Fweb.facebook.com%2Fshare%2F16PiWdmELP%2F%3Fmibextid%3DwwXIfr%26_rdc%3D1%26_rdr#'}>
+                   
+                   <FaFacebook className="text-white mt-[1.1px] h-5 w-5 hover:text-primary-300" />
+                   <span className="text-white mx-2 hover:text-primary-200">Facebook </span>
                    </Link>
                 </div>
 
