@@ -4,6 +4,7 @@ import type { CustomRouteObject } from './core/types/routes';
 import { lazyImport } from './core/utils/lazyImport';
 
 
+
 // Ejemplo de lazy import
 const { HomePage } = lazyImport(() => import('./pages/homePage'), 'HomePage');
 const { Contruccion } = lazyImport(() => import('./pages/contruccion'), 'Contruccion');
@@ -13,6 +14,7 @@ const {  MainLayout} = lazyImport(() => import('./core/ui/mainLayout'), 'MainLay
 
 const { TurimsUsa } = lazyImport(() => import('./migration/pages/turimsUsa'), 'TurimsUsa');
 const { TurimsCanada } = lazyImport(() => import('./migration/pages/turimsCanada'), 'TurimsCanada');
+const { TurimsReinoUnido } = lazyImport(() => import('./migration/pages/turimsReinoUnido'), 'TurimsReinoUnido');
 
 const RoutesComponent: CustomRouteObject[] = [
   {
@@ -45,6 +47,11 @@ const RoutesComponent: CustomRouteObject[] = [
         name: 'Turims Canada',
         path: 'Migrations/TurimsCanada',
         element: <TurimsCanada />
+      },
+      {
+        name: 'Turims Reino Unido',
+        path: 'Migrations/TurimsReinoUnido',
+        element: <TurimsReinoUnido />
       },
       {
         name: 'Page Not Found',

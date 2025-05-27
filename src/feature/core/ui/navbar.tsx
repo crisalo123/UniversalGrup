@@ -7,7 +7,7 @@ const linkNavar = [
   { name: 'VISA ESTUDIO USA', to: 'Migrations' },
   { name: 'VISA TURISMO USA', to: 'Migrations/TurimsUsa' },
   { name: 'VISA TURISMO CANADA', to: 'Migrations/TurimsCanada' },
-  { name: 'VISA TURISMO REINO UNIDO', to: '/*' },
+  { name: 'VISA TURISMO REINO UNIDO', to: 'Migrations/TurimsReinoUnido'},
   { name: 'VISA TURISMO CHINA', to: '/*' },
   { name: 'PERDON MIGRATORIO', to: '/*' }
 ]

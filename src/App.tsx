@@ -3,11 +3,13 @@ import { BrowserRouter as Router, Route , Routes} from 'react-router-dom';
 
 import './index.css'
 import RoutesComponent from './feature/routes';
+import { ModalProvider } from './context/modalContex';
 
 
 function App() {
 
   return (
+    <ModalProvider>
       <Router>
       <Routes>
         {RoutesComponent.map((route, index) => (
@@ -23,6 +25,7 @@ function App() {
         ))}
       </Routes>
     </Router>
+    </ModalProvider>
   )
 }
 

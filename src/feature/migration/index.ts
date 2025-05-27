@@ -1,1 +1,1 @@
-export * from './bannerMigrations/bannerMigrations'
+export * from './Component/bannerMigrations/bannerMigrations'

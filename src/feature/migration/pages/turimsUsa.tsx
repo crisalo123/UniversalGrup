@@ -1,31 +1,19 @@
-import {  Link } from '@/feature/core/ui'
+
 import { FaPassport, FaPlaneDeparture, FaRegSmileBeam } from "react-icons/fa"
 import  imgbgTurimsUsa from '@/feature/migration/img/turismoUsa.jpg'
+import { CardInitial } from '../Component/CardInitial'
 
 export const TurimsUsa = () => {
   return (
     
       <main className="min-h-screen  pt-10 pb-16">
         {/* Hero */}
-      <section className="relative bg-cover bg-center text-white min-h-[60vh] flex items-center justify-center px-6"
-  style={{ backgroundImage: `url(${imgbgTurimsUsa})` }}>
-  <div className="bg-white/80 mt-5 md:mt-0 p-10 rounded-lg max-w-2xl text-center shadow-xl">
-    <h1 className="text-4xl md:text-5xl font-bold mb-4 leading-tight font-pacifico text-red-600 drop-shadow-lg">
-      ¡Viaja a Estados Unidos con tu Visa de Turismo!
-    </h1>
-    <p className="text-xl mb-6 text-black font-normal">
-      Descubre, explora y vive experiencias inolvidables en USA. Nosotros te ayudamos a lograrlo.
-    </p>
-    <Link
-      to="https://wa.me/3202853852"
-      target="_blank"
-      rel="noopener noreferrer"
-      className="bg-red-600 text-sm hover:bg-red-500 text-white hover:no-underline px-8 py-3 rounded-full font-semibold md:text-lg shadow-lg transition"
-    >
-      Solicita tu asesoría ahora
-    </Link>
-  </div>
-</section>
+       <CardInitial
+        title="Visa de Turismo para Estados Unidos"
+        subtitle="Permite visitar EEUU por placer o negocios hasta 6 meses."
+         backgroundImage={imgbgTurimsUsa}
+        buttonshow={true}
+/>
 
          <section className="max-w-3xl mt-10 mx-auto mb-16 px-6 py-10 rounded-3xl bg-blue-50/80 shadow-lg">
           <h2 className="text-lg md:text-2xl font-bold text-blue-800 mb-4 text-center italic">

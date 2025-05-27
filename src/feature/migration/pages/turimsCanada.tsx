@@ -1,6 +1,7 @@
 
 
 import imgCanada from '@/feature/migration/img/img_canada.avif'
+import { CardInitial } from '../Component/CardInitial'
 
 const testimonios = [
   {
@@ -26,17 +27,13 @@ export const TurimsCanada = () => {
    
     <main className="min-h-screen bg-gradient-to-br from-blue-50 to-blue-200 pt-4 pb-16">
       {/* Hero */}
-      <section className="relative bg-cover bg-center text-white min-h-[70vh] flex items-center justify-center px-6"
-        style={{ backgroundImage: `url(${imgCanada})` }}>
-        <div className="bg-white/80 bg-opacity-60 p-10 rounded-lg max-w-2xl text-center">
-          <h1 className="text-4xl md:text-5xl font-bold mb-4 leading-tight font-pacifico text-red-500 drop-shadow-lg">
-            ¡Descubre Canadá con tu Visa de Turismo!
-          </h1>
-          <p className="text-xl mb-6 text-black font-normal">
-            Vive la experiencia canadiense: naturaleza, cultura y aventura te esperan. Te ayudamos a lograrlo.
-          </p>
-        </div>
-      </section>
+     
+      <CardInitial
+        backgroundImage={imgCanada}
+        buttonshow={false}
+        title="¡Descubre Canadá con tu Visa de Turismo!"
+        subtitle="Vive la experiencia canadiense: naturaleza, cultura y aventura te esperan. Te ayudamos a lograrlo."
+      />
 
       {/* Información principal */}
       <section className="max-w-3xl mt-10 mx-auto mb-16 px-6 py-10 rounded-3xl bg-white/80 shadow-lg">
