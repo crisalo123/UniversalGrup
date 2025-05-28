@@ -74,8 +74,8 @@ export const Navbar: React.FC = () => {
             >
               ProTours
             </Link>
-            <a
-              href="Contact"
+            <Link
+              to="Contact"
               className={`transition duration-300 ${
                 isScrolled
                   ? "text-gray-800 hover:text-blue-500"
@@ -83,7 +83,7 @@ export const Navbar: React.FC = () => {
               }`}
             >
               Contacto
-            </a>
+            </Link>
           </nav>
         )}
 
