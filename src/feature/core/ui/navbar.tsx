@@ -170,7 +170,7 @@ export const Navbar: React.FC = () => {
                     ProTours
                   </Link>
                   <Link
-                    to="/Contact"
+                    to={"/Contact"}
                     className="text-gray-800 hover:text-blue-500 py-2"
                   >
                     Contacto
