@@ -8,11 +8,7 @@ import {
 import { zodResolver } from "@hookform/resolvers/zod";
 
 export const FormContact = () => {
-  const {
-    register,
-    handleSubmit,
-    formState: { errors },
-  } = useForm<CreateDocumentSchemaType>({
+  const { register, handleSubmit } = useForm<CreateDocumentSchemaType>({
     resolver: zodResolver(createDocumentSchema),
   });
 
