@@ -7,10 +7,7 @@ const { ContactPage } = lazyImport(
   () => import("./pages/contactPage"),
   "ContactPage"
 );
-const { Contruccion } = lazyImport(
-  () => import("./pages/contruccion"),
-  "Contruccion"
-);
+
 const { ProtursPage } = lazyImport(
   () => import("./pages/protursPage"),
   "ProtursPage"
@@ -37,6 +34,11 @@ const { TurimsReinoUnido } = lazyImport(
   "TurimsReinoUnido"
 );
 
+const { Contruccion } = lazyImport(
+  () => import("./pages/contruccion"),
+  "Contruccion"
+);
+
 const RoutesComponent: CustomRouteObject[] = [
   {
     name: "Main",
@@ -52,6 +54,12 @@ const RoutesComponent: CustomRouteObject[] = [
         name: "Proturs",
         path: "Proturs",
         element: <ProtursPage />,
+      },
+
+      {
+        name: "Contact",
+        path: "Contact",
+        element: <ContactPage />,
       },
       {
         name: "Migrations",
@@ -74,11 +82,6 @@ const RoutesComponent: CustomRouteObject[] = [
         element: <TurimsReinoUnido />,
       },
 
-      {
-        name: "Contacto",
-        path: "Contact",
-        element: <ContactPage />,
-      },
       {
         name: "Page Not Found",
         path: "/*",

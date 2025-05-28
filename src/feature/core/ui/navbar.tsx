@@ -75,7 +75,7 @@ export const Navbar: React.FC = () => {
               ProTours
             </Link>
             <Link
-              to="Contact"
+              to={"Contact"}
               className={`transition duration-300 ${
                 isScrolled
                   ? "text-gray-800 hover:text-blue-500"
