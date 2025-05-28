@@ -19,7 +19,7 @@ export const FormContact = () => {
   return (
     <div className="w-10/12 mx-auto  justify-center items-center mt-5">
       <form
-        onSubmit={handleSubmit(onSubmit, (errors) => console.log(errors))}
+        onSubmit={handleSubmit(onSubmit)}
         className="grid  grid-cols-1 md:grid-cols-3 gap-5 "
       >
         <div className="col-span-1">
