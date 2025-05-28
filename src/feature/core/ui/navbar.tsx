@@ -169,12 +169,12 @@ export const Navbar: React.FC = () => {
                   >
                     ProTours
                   </Link>
-                  <a
-                    href="#contact"
+                  <Link
+                    to="/Contact"
                     className="text-gray-800 hover:text-blue-500 py-2"
                   >
                     Contacto
-                  </a>
+                  </Link>
                 </>
               ) : (
                 linkNavar.map((link) => (
