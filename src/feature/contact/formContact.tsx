@@ -24,7 +24,7 @@ export const FormContact = () => {
     <div className="w-10/12 mx-auto  justify-center items-center mt-5">
       <form
         onSubmit={handleSubmit(onSubmit, (errors) => console.log(errors))}
-        className="grid grid-cols-3 gap-5 "
+        className="grid  grid-cols-1 md:grid-cols-3 gap-5 "
       >
         <div className="col-span-1">
           <Input placeholder="Nombre Completo" {...register("name")} />
@@ -36,7 +36,7 @@ export const FormContact = () => {
           <Input placeholder="Teléfono" {...register("phone")} />
         </div>
 
-        <div className="col-span-3">
+        <div className="col-span-1 md:col-span-3">
           <Textarea placeholder="Mensaje" {...register("message")} />
         </div>
 
