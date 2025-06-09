@@ -15,7 +15,7 @@ export const CardInitial: React.FC<CardInitialProps> = ({
 }) => {
   return (
     <section
-      className="relative bg-cover bg-center min-h-[70vh] flex items-center justify-center px-6"
+      className="relative bg-cover pt-10 md:pt-0 bg-center min-h-[70vh] flex items-center justify-center px-6"
       style={{ backgroundImage: `url(${backgroundImage})` }}
     >
       <div className="bg-white/80 p-10 rounded-3xl max-w-2xl text-center shadow-xl border border-blue-200">

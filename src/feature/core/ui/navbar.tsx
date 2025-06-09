@@ -8,8 +8,8 @@ const linkNavar = [
   { name: "VISA TURISMO USA", to: "Migrations/TurimsUsa" },
   { name: "VISA TURISMO CANADA", to: "Migrations/TurimsCanada" },
   { name: "VISA TURISMO REINO UNIDO", to: "Migrations/TurimsReinoUnido" },
-  { name: "VISA TURISMO CHINA", to: "/*" },
-  { name: "PERDON MIGRATORIO", to: "/*" },
+  { name: "VISA TURISMO CHINA", to: "Migrations/TurimsChina" },
+  { name: "PERDON MIGRATORIO", to: "Migrations/ImmigrationForgiveness" },
 ];
 
 export const Navbar: React.FC = () => {

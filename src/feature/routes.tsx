@@ -21,10 +21,25 @@ const { MainLayout } = lazyImport(
   "MainLayout"
 );
 
+
+
 const { TurimsUsa } = lazyImport(
   () => import("./migration/pages/turimsUsa"),
   "TurimsUsa"
 );
+
+
+const { TurimsChina } = lazyImport(
+  () => import("./migration/pages/turimsChina"),
+  "TurimsChina"
+);
+
+const {  ImmigrationForgiveness} = lazyImport(
+  () => import("./migration/pages/immigrationForgiveness"),
+  "ImmigrationForgiveness"
+);
+
+
 const { TurimsCanada } = lazyImport(
   () => import("./migration/pages/turimsCanada"),
   "TurimsCanada"
@@ -81,6 +96,18 @@ const RoutesComponent: CustomRouteObject[] = [
         path: "Migrations/TurimsReinoUnido",
         element: <TurimsReinoUnido />,
       },
+      {
+        name: "Turims China",
+        path: "Migrations/TurimsChina",
+        element: <TurimsChina />,
+      },
+
+      {
+        name: "Imigration Forgiveness",
+        path: "Migrations/ImmigrationForgiveness",
+        element: <ImmigrationForgiveness />,
+      },
+
 
       {
         name: "Page Not Found",
