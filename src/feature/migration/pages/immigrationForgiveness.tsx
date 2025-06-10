@@ -15,7 +15,7 @@ export const ImmigrationForgiveness = () => {
               subtitle="Te acompañamos en el proceso para regularizar tu situación migratoria y abrir nuevas oportunidades en EE.UU."
             />
 
-      {/* ¿Qué es el Perdón Migratorio? */}
+   
       <section className="max-w-3xl mx-auto mt-10 mb-16 px-6 py-10 rounded-3xl bg-white/80 shadow-lg">
         <h2 className="text-2xl md:text-3xl font-bold text-red-700 mb-6 text-center font-montserrat">
           ¿Qué es el Perdón Migratorio?
