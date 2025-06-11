@@ -5,7 +5,7 @@ import { FormContact } from "@/feature/contact";
 
 export const ImmigrationForgiveness = () => {
   return (
-    <main className="min-h-screen bg-gradient-to-br from-blue-50 to-blue-100 pt-24 pb-16">
+    <main className="min-h-screen bg-gradient-to-br from-blue-50 to-blue-100 pt-10 pb-16">
       {/* Hero */}
 
          <CardInitial

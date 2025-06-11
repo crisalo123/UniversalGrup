@@ -21,7 +21,7 @@ const testimonios = [
 
 export const TurimsChina = () => {
   return (
-    <main className="min-h-screen bg-gradient-to-br from-red-50 to-yellow-100 pt-10 md:pt-4 md:pb-16">
+    <main className="min-h-screen bg-gradient-to-br from-red-50 to-yellow-100 pt-10 pb-16">
       {/* Hero */}
       <CardInitial
         backgroundImage={imgChina}

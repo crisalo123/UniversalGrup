@@ -25,6 +25,11 @@ export const ContactPage = () => {
       </main>
 
       <div className="mb-3 ">
+
+        <p className=" block md:hidden text-blue-700 text-md justify-center mx-auto p-5 ">
+            Nuestro equipo de expertos está disponible para ayudarle a responder
+            las preguntas que pueda tener respecto a cualquier proceso que tengas. 
+          </p>
         <FormContact />
       </div>
     </>

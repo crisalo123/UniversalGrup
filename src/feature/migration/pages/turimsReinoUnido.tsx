@@ -23,7 +23,7 @@ const testimonios = [  {
 
 export const TurimsReinoUnido = () => {
   return (
-    <main className="min-h-screen bg-gradient-to-br from-gray-50 to-blue-100 pt-0 pb-16">
+    <main className="min-h-screen bg-gradient-to-br from-gray-50 to-blue-100 pt-10 pb-16">
       {/* Hero */}
      
        <CardInitial 

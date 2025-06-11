@@ -43,11 +43,11 @@ export const FormContact = () => {
         onSubmit={handleSubmit(onSubmit)}
         className="grid  grid-cols-1 md:grid-cols-2 gap-5 "
       >
-        <div className="col-span-2">
+        <div className=" col-span-3 md:col-span-2">
           <Input placeholder="Nombre Completo" {...register("name")} />
           <p className="text-red-500">{errors.name?.message}</p>
         </div>
-        <div className="col-span-1">
+        <div className="col-span-3 md:col-span-1">
           <Input placeholder="Teléfono" {...register("phone")} />
           <p className="text-red-500">{errors.phone?.message}</p>
         </div>
@@ -57,7 +57,7 @@ export const FormContact = () => {
         </div>
         
 
-        <div className="col-span-1 md:col-span-3">
+        <div className="col-span-3 md:col-span-3">
           <Textarea className="h-40" placeholder="Mensaje" {...register("message")} />
           <p className="text-red-500">{errors.message?.message}</p>
         </div>
